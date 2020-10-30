@@ -19,24 +19,13 @@ public abstract class Book implements StoreMediaOperations {
         this.author = anotherBook.author;
     }
 
-    public UUID getId() {
-        return id;
-    }
 
     public void setId(UUID newId) {
         this.id = newId;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
     public void setTitle(String newTitle) {
         this.title = newTitle;
-    }
-
-    public String getAuthor() {
-        return author;
     }
 
     public void setAuthor(String newAuthor) {

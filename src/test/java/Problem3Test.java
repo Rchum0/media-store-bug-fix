@@ -15,11 +15,6 @@ public class Problem3Test {
         assertFalse(f.equals(bf));
         assertEquals(f.equals(bf));
 
-        System.out.println(f.getId());
-        System.out.println(bf.getId());
-        System.out.println();
-        System.out.println(f.getTitle());
-        System.out.println(bf.getTitle());
     }
 
     @Test
