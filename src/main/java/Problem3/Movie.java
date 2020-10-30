@@ -19,6 +19,21 @@ public abstract class Movie implements StoreMediaOperations {
         this.id = anotherMovie.id;
     }
 
+
+    public void setRating(String newRating) {
+        this.rating = newRating;
+    }
+
+
+    public void setTitle(String newTitle) {
+        this.title = newTitle;
+    }
+
+
+    public void setId(UUID newId) {
+        this.id = newId;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
@@ -37,11 +52,12 @@ public abstract class Movie implements StoreMediaOperations {
         // The bug is caught when
         //  1. newly add tests fail while all old tests still pass
         //  2. remove the bug and use the fix below, all tests pass
+        /*
         return id.equals(theOtherMovie.id) &&
                 rating.equals(theOtherMovie.rating) &&
                 title.equals(theOtherMovie.title);
-
+*/
         // fix is here
-        //return this.id == ((Movie) obj).id;
+        return this.id == ((Movie) obj).id;
     }
 }
