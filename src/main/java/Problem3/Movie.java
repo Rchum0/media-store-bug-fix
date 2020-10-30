@@ -19,6 +19,30 @@ public abstract class Movie implements StoreMediaOperations {
         this.id = anotherMovie.id;
     }
 
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String newRating) {
+        this.rating = newRating;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String newTitle) {
+        this.title = newTitle;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID newId) {
+        this.id = newId;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
